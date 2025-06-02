@@ -5,22 +5,22 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                echo 'Building the application...'
+                echo 'committed Building the application...'
             }
         }
         stage('test') {
             steps {
-                echo 'Testing the application...'
+                echo 'committed Testing the application...'
             }
         }
         stage('deploy') {
             steps {
-                echo 'Deploying the application...'
+                echo ' committed  Deploying the application...'
             }
         }
         stage('Deploy') {
             steps {
-                echo 'Deploying....'
+                echo 'committed  Deploying....'
             }
         }
     }
