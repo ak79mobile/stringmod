@@ -16,6 +16,7 @@ pipeline {
             steps {
                 echo 'committed Testing the application...'
                 echo "building version ${NEW_VERSION}"
+                echo 'building version ${NEW_VERSION} ........ with single code'
             }
         }
         stage('deploy') {
