@@ -32,8 +32,13 @@ pipeline {
 
     post {
         always {
+            echo 'Always block'
         }
         failure {
+            echo 'Failure block'
+        }
+        changed {
+            echo 'Changed block'
         }
         
     }
