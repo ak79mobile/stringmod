@@ -37,8 +37,6 @@ pipeline {
                 }                
             }
         }
-    }
-
     post {
         always {
             echo 'Always block'
@@ -48,7 +46,6 @@ pipeline {
         }
         changed {
             echo 'Changed block'
-        }
-        
+        }        
     }
 }
