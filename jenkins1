@@ -32,7 +32,7 @@ pipeline {
 
                 echo "Trying withCredentials ..................."
 
-                withCredentials([usernamePassword(credentials: 'AK-Git-Test', usernameVariable: USER, usernamePassword: PWD)]){
+                withCredentials([usernamePassword(credentials: 'AK-Git-Test', usernameVariable: USER, passwordVariable: PWD)]){
                     sh "some script with username ---- ${USER}  password ---- ${PWD}"
                 }                
             }
